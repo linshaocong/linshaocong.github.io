@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Lsc"><title>搭建服务器设置SS—Bandwagon篇 · LoHo Blog</title><meta name="description" content="一.搬瓦工服务器的选择
+搬瓦工这里的套餐比较多比较复杂，选择比较多，而且很乱，不过我们既然是搭建SS，那我就直接推荐我认为比较合适的两个套餐；
+
+ 搬瓦工  
+
+目前比较合适的有两个套餐，但是不一定都有货；
+服务器选择优先选KVM和带CN2；
+选择CN2的原因主要是他和电信以及联通是直连，延迟在16"><meta name="keywords"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">LoHo Blog</a></h3><div class="description"><p>Just write something</p></div></div></div><ul class="social-links"></ul><div class="footer"></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/archives">文章</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img src="/images/favicon.png"></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>搭建服务器设置SS—Bandwagon篇</a></h3></div><div class="post-content"><h4 id="一-搬瓦工服务器的选择"><a href="#一-搬瓦工服务器的选择" class="headerlink" title="一.搬瓦工服务器的选择"></a>一.搬瓦工服务器的选择</h4><blockquote>
+<p>搬瓦工这里的套餐比较多比较复杂，选择比较多，而且很乱，不过我们既然是搭建SS，那我就直接推荐我认为比较合适的两个套餐；</p>
+</blockquote>
+<p> <a href="https://bandwagonhost.com/aff.php?aff=34004" target="_blank" rel="noopener">搬瓦工</a>  </p>
+<ul>
+<li>目前比较合适的有两个套餐，但是不一定都有货；</li>
+<li>服务器选择优先选KVM和带CN2；</li>
+<li>选择CN2的原因主要是他和电信以及联通是直连，延迟在160ms，理论值最小就是这个值；</li>
+<li>当然还有香港的服务器，但是贵太多，不划算；</li>
+<li>套餐一算下来平均一个月15RMB比Vultr还便宜，所以个人更倾向这个；   </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>套餐1-CN2 10 GB【<a href="https://bwh1.net/aff.php?aff=34004&amp;pid=56" target="_blank" rel="noopener">点击直达</a>】</th>
+<th>套餐2-CN2 20 GB【<a href="https://bwh1.net/aff.php?aff=34004&amp;pid=57" target="_blank" rel="noopener">点击直达</a>】</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU：1 核</td>
+<td>CPU：1 核</td>
+</tr>
+<tr>
+<td>内存：512 MB</td>
+<td>内存：1024 MB</td>
+</tr>
+<tr>
+<td>硬盘：10 GB SSD</td>
+<td>硬盘：20 GB SSD</td>
+</tr>
+<tr>
+<td>流量：500 GB</td>
+<td>流量：1000 GB</td>
+</tr>
+<tr>
+<td>带宽：1 Gbps</td>
+<td>带宽：1 Gbps</td>
+</tr>
+<tr>
+<td>机房：KVM 8 个机房</td>
+<td>机房：KVM 8 个机房</td>
+</tr>
+<tr>
+<td>带宽：1 Gbps</td>
+<td>带宽：1 Gbps</td>
+</tr>
+<tr>
+<td>迁移：可迁移机房，流量不变</td>
+<td>迁移：可迁移机房，流量不变</td>
+</tr>
+<tr>
+<td>价格：29.99 美元/年</td>
+<td>价格：29.99 美元/半年，49.99 美元/年</td>
+</tr>
+</tbody>
+</table>
+<p>因为这个的页面套餐众多，找也很麻烦所以买这两个套餐可以直接点记上面链接过去购买，两个套餐的选择看你用多少流量，一般2-3个人用一个月500G都够用，所以我用套餐1来做演示；</p>
+<h4 id="二-服务器购买以及注册"><a href="#二-服务器购买以及注册" class="headerlink" title="二.服务器购买以及注册"></a>二.服务器购买以及注册</h4><blockquote>
+<p> <strong>因为这个的注册有个验证码是谷歌的，可能会遇到问题，所以推荐大家先选择套餐加入购物车在注册，可以避免遇到验证码问题</strong></p>
+</blockquote>
+<p><strong>1.  首先点击套餐1的购买链接，付款选择只有一个年付，套餐2 可以选择半年的，服务器地址现在默认就一个，后面可以迁移；</strong><br>  <img src="/2018/07/18/Bandwagon/1.png" title="说明"><br>  <img src="/2018/07/18/Bandwagon/2.png" title="说明"><br><strong>2.这个页面其实还隐藏了一个优惠码的小窍门，chrome浏览器右键查看源代码，133行可以找到一个优惠码，每次刷新都不一样，不过大家不用试了，目前全网最高的优惠码 BWH1ZBPVK  可以优惠6%，大家直接使用这个就好了；</strong><br>  <img src="/2018/07/18/Bandwagon/3.png" title="说明"><br>  <img src="/2018/07/18/Bandwagon/4.png" title="说明"><br><strong>3.前面加入购物车后，在订单下面输入优惠码 BWH1ZBPVK  ，然后旁边点击验证，然后提交就可以了；</strong><br>  <img src="/2018/07/18/Bandwagon/5.png" title="说明"><br>  <img src="/2018/07/18/Bandwagon/6.png" title="说明"><br><strong>4. 接下来就会提示我们注册了，这时候一定要严格按照图片的来写，不能瞎填，也不是说完全真实，你要是名字写个adfasfafg那肯定不行，后面点击update ，该打勾的打勾，然后提交；</strong><br>  <img src="/2018/07/18/Bandwagon/7.png" title="说明"><br><strong>5. 然后看下订单有没有问题，没得话就点paynow 付款，点击以后我们就看到一个熟悉的支付宝界面了，付款返回就行了</strong><br>  <img src="/2018/07/18/Bandwagon/8.png" title="说明"><br>  <img src="/2018/07/18/Bandwagon/9.png" title="说明"><br><strong>6.付完款如果没登陆就登陆下，点击首页右上角的Client area 用户界面查看购买的，如果是显示没登陆就登陆下，登陆进来，一片空白，别着急，点击菜单的Services里的My Services；</strong><br>  <img src="/2018/07/18/Bandwagon/10.png" title="说明"><br>  <img src="/2018/07/18/Bandwagon/11.png" title="说明"><br><strong>7.看到你购买的套餐了，点击control按钮进入控制面板；</strong><br>  <img src="/2018/07/18/Bandwagon/12.png" title="说明"><br><strong>8. 不知道首页是不是这样，如果有stop的话就点一下；</strong><br>  <img src="/2018/07/18/Bandwagon/13.png" title="说明"><br><strong>9. 这点可以不操作，点击migrate，从3机房搬到8机房，不过经常会遇到8机房满了的情况，看运气能转就转</strong><br>  <img src="/2018/07/18/Bandwagon/14.png" title="说明"><br><strong>10. 然后我们重装下新系统，选择centos64 的带BBR的模式</strong><br>  <img src="/2018/07/18/Bandwagon/15.png" title="说明"><br><strong>11. 出现的密码就是你新的服务器密码，邮箱里面的邮件也有这个密码，最好记一下</strong><br>  <img src="/2018/07/18/Bandwagon/16.png" title="说明"><br><strong>12. 点击首页出现这个就是安装完毕了</strong><br>  <img src="/2018/07/18/Bandwagon/17.png" title="说明">  </p>
+<h4 id="三-SS的安装"><a href="#三-SS的安装" class="headerlink" title="三.SS的安装"></a>三.SS的安装</h4><p><strong>1. 我们服务器相当于我们的一台电脑，那么我们要怎么操作他呢？这时候就是要使用一个软件xshell，可以自己下载，也可以用我提供的，下载完安装打开界面，点右上角新建一个会话，输入服务器IP和服务器端口 </strong><br>链接：<a href="https://pan.baidu.com/s/1PmIhy5LDLoBqeY9GwBi8yg" target="_blank" rel="noopener">百度云</a> 密码：4ha8</p>
+  <img src="/2018/07/18/Bandwagon/18.png" title="说明">  
+<p><strong>2. 点击左边刚建立的新会话，输入默认的用户名：root 打勾，确定；</strong><br>  <img src="/2018/07/18/Bandwagon/19.png" title="说明"><br><strong>3. 输入密码，忘记的可以去邮箱看； </strong><br>  <img src="/2018/07/18/Bandwagon/20.png" title="说明"><br><strong>4. 这样子就进入系统了；</strong><br>  <img src="/2018/07/18/Bandwagon/21.png" title="说明"><br><strong>5.接下来依次输入下面四行代码；</strong>  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum install -y wget</span><br><span class="line">wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh</span><br><span class="line">chmod +x shadowsocks.sh</span><br><span class="line">./shadowsocks.sh 2&gt;&amp;1 | tee shadowsocks.log</span><br></pre></td></tr></table></figure>
+<img src="/2018/07/18/Bandwagon/22.png" title="说明">  
+<img src="/2018/07/18/Bandwagon/23.png" title="说明">  
+<img src="/2018/07/18/Bandwagon/24.png" title="说明">  
+<p><strong>6. 输完第四行，就会让你输入你想设置的SS密码，这里先按照个人的来设置，多用户的在后面，不过也是要先完成单人的配置；</strong><br><img src="/2018/07/18/Bandwagon/25.png" title="说明"><br><strong>7. 输入你想设置的SS端口；</strong><br><img src="/2018/07/18/Bandwagon/26.png" title="说明"><br><strong>8. 选择你想用的加密方式，默认选第七个就行了；</strong><br><img src="/2018/07/18/Bandwagon/27.png" title="说明"><br><strong>9. 现在就可以使用了，如果你用单用户的到这里就结束了，直接看最后的模块SS的使用，想设置多用户的可以往后看</strong><br><img src="/2018/07/18/Bandwagon/28.png" title="说明"><br><strong>10. 多用户的配置，首先输入命令打开文本；</strong>  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/shadowsocks.json</span><br></pre></td></tr></table></figure>
+<img src="/2018/07/18/Bandwagon/29.png" title="说明">
+<p><strong>11. 按键盘i键进入insert模式，把原来的内容清空，替换成下面的内容，端口8001-8005你可以随意改，右边的123456对应的是每个端口的密码，也可以改；</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;server&quot;:&quot;0.0.0.0&quot;,</span><br><span class="line">    &quot;local_address&quot;:&quot;127.0.0.1&quot;,</span><br><span class="line">    &quot;local_port&quot;:1080,</span><br><span class="line">    &quot;port_password&quot;:&#123;</span><br><span class="line">     &quot;8001&quot;:&quot;123456&quot;,</span><br><span class="line">     &quot;8002&quot;:&quot;123456&quot;,</span><br><span class="line">     &quot;8003&quot;:&quot;123456&quot;,</span><br><span class="line">     &quot;8004&quot;:&quot;123456&quot;,</span><br><span class="line">     &quot;8005&quot;:&quot;123456&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">    &quot;timeout&quot;:300,</span><br><span class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;,</span><br><span class="line">    &quot;fast_open&quot;:false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<img src="/2018/07/18/Bandwagon/30.png" title="说明">  
+<p><strong>12. 替换完成以后，先按ESC ，输入：wq退出并保存，记住冒号也要输入；</strong><br><img src="/2018/07/18/Bandwagon/31.png" title="说明"><br><strong>13. 输入命令，重启下服务，大功告成；</strong>  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service shadowsocks restart</span><br></pre></td></tr></table></figure>
+<img src="/2018/07/18/Bandwagon/32.png" title="说明">  
+<h4 id="四-在电脑或手机使用SS"><a href="#四-在电脑或手机使用SS" class="headerlink" title="四.在电脑或手机使用SS"></a>四.在电脑或手机使用SS</h4><ul>
+<li>首先我们需要一个软件，ShadowSocks；  <ul>
+<li>链接：<a href="https://pan.baidu.com/s/1U0skNPC22InQ18aBuFmvwQ" target="_blank" rel="noopener">百度云</a> 密码：md1v </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>里面放了win/mac/Android三个版本，自己选择下载，苹果用户得自己去应用商店搜索Shadowrocket/Wingy，不过是收费或者需要换区下载，有经验的同学也可以去github上自己打包安装到手机上 ；</p>
+</li>
+<li><p>配置方式；我们以windows系统上使用为例，其他系统大同小异  </p>
+<ul>
+<li>先打开软件填前三项，点击确定，软件会隐藏到后台，在你右下角活动栏里找到小飞机的图标右键，选择启动；  <img src="/2018/07/18/Bandwagon/33.png" title="说明">     </li>
+<li>收工！  <img src="/2018/07/18/Bandwagon/34.png" title="说明"></li>
+</ul>
+</li>
+</ul>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2018-07-18</span><i class="fa fa-tag"></i><a class="tag" href="/tags/Bandwagon/" title="Bandwagon">Bandwagon </a></div></div></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2018/06/16/Vultr/" title="搭建服务器设置SS—Vultr篇">上一篇</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>
