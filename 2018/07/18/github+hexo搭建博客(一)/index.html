@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Author Name,name@example.com"><title>github+hexo搭建博客(一) · LoHo Blog</title><meta name="description" content="一.注册Github首先关于github是啥这种问题应该不会有人问了的，这里就不讲了，本篇文章主要就是采用github提供的一个个人页面进行制作，所以我们第一步自然是注册gitbub；
+
+Github打开网站如图所示，填好你的用户名(最好不要瞎写，你后面库名和连接都是这个名字)，邮箱，密码(密码要求"><meta name="keywords"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">LoHo Blog</a></h3><div class="description"><p>Just write something</p></div></div></div><ul class="social-links"><li><a href="https://twitter.com/linshaocong2006"><i class="fa fa-twitter"></i></a></li><li><a href="http://weibo.com/linshaocong"><i class="fa fa-weibo"></i></a></li><li><a href="http://facebook.com/linshaocong"><i class="fa fa-facebook"></i></a></li><li><a href="http://github.com/linshaocong"><i class="fa fa-github"></i></a></li></ul><div class="footer"><span>   <span id="busuanzi_container_site_uv">本站访客数: <span id="busuanzi_value_site_uv"> </span></span></span><span> 人</span></div><script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/archives">文章</a></li><li><a href="/about">关于</a></li><li><a href="/links">友链</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img src="/images/favicon.png"></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>github+hexo搭建博客(一)</a></h3></div><div class="post-content"><h5 id="一-注册Github"><a href="#一-注册Github" class="headerlink" title="一.注册Github"></a>一.注册Github</h5><p>首先关于github是啥这种问题应该不会有人问了的，这里就不讲了，本篇文章主要就是采用github提供的一个个人页面进行制作，所以我们第一步自然是注册gitbub；</p>
+<ol>
+<li><p><a href="https://github.com/" target="_blank" rel="noopener">Github</a>打开网站如图所示，填好你的用户名(最好不要瞎写，你后面库名和连接都是这个名字)，邮箱，密码(密码要求七位，必须有数字和字母)，sigh up 提交注册。</p>
+<img src="/2018/07/18/github+hexo搭建博客(一)/1.png" title="说明">
+</li>
+<li><p>第二步，默认free就好，点击下一步；</p>
+<img src="/2018/07/18/github+hexo搭建博客(一)/2.png" title="说明">
+</li>
+<li><p>第三步，啥都不选，提交；</p>
+<img src="/2018/07/18/github+hexo搭建博客(一)/3.png" title="说明">
+</li>
+<li><p>重要的一步，先去邮箱验证你的账号，不然后面没法操作了；点击 new repository，建立一个库；</p>
+<img src="/2018/07/18/github+hexo搭建博客(一)/4.png" title="说明">
+</li>
+<li><p>库名必选用 （用户名.gtihub.io） 的形式，可以参考图片，然后创建；</p>
+<img src="/2018/07/18/github+hexo搭建博客(一)/5.png" title="说明">
+</li>
+<li><p>出现如图所示，你的github前期工作已经准备完了；</p>
+<img src="/2018/07/18/github+hexo搭建博客(一)/6.png" title="说明">
+</li>
+</ol>
+<h5 id="二-本地的环境搭建准备"><a href="#二-本地的环境搭建准备" class="headerlink" title="二. 本地的环境搭建准备"></a>二. 本地的环境搭建准备</h5><ol>
+<li><p>本地环境需要安装这下面两个软件；</p>
+<p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a></p>
+<p><a href="http://nodejs.cn/download/" target="_blank" rel="noopener">Node.js</a></p>
+<p>下载完后，点击安装，除了选下安装地址其他全部下一步，下一步就好了；</p>
+</li>
+<li><p>打开命令窗口(Win+R，输入CMD，回车)，输入git version/ node -v/ npm -v ，如果都出现了版本号，那就说明我们安装成功了；</p>
+<img src="/2018/07/18/github+hexo搭建博客(一)/7.png" title="说明">
+</li>
+<li><p>此时我们需要将我们本地和远方的github连接起来，也就是设置SSH，首先我们在桌面右键点击，gitbush here，如果你前面正确安装，应该是会出现这个的；</p>
+<img src="/2018/07/18/github+hexo搭建博客(一)/8.png" title="说明">
+</li>
+<li><p>在打开的窗口输入下面这个命令，然后出现停顿就按回车，连按三次，如图所示，就会在C盘的用户目录下生成一个.ssh的文件夹，里面生成id_rsa和id_rsa.pub这两个文件；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+<img src="/2018/07/18/github+hexo搭建博客(一)/9.png" title="说明">
+</li>
+<li><p>我们打开id_rsa.pub，可以用记事本打开，复制里面的全部内容；</p>
+<img src="/2018/07/18/github+hexo搭建博客(一)/10.png" title="说明">
+</li>
+<li><p>我们打开的我们的github，头像下拉选择setting；</p>
+<img src="/2018/07/18/github+hexo搭建博客(一)/11.png" title="说明">
+</li>
+<li><p>选择左方的SSH，右边点击new一个SSH key；</p>
+<img src="/2018/07/18/github+hexo搭建博客(一)/12.png" title="说明">
+</li>
+<li><p>title随便填，key里面把刚刚文件复制的全部粘贴，然后点击ADD添加；</p>
+<img src="/2018/07/18/github+hexo搭建博客(一)/13.png" title="说明">
+</li>
+<li><p>然后我们回到刚刚的命令行，可以用下面的命令测试是否和github联系上了，可能会出现如图所示，目前不知道有什么影响，输入yes就好了，然后后出现 HI，xxxx， success等字样，就说明连接上了；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<img src="/2018/07/18/github+hexo搭建博客(一)/14.png" title="说明">
+</li>
+</ol>
+<h5 id="三-本地安装HEXO博客的配置文件"><a href="#三-本地安装HEXO博客的配置文件" class="headerlink" title="三. 本地安装HEXO博客的配置文件"></a>三. 本地安装HEXO博客的配置文件</h5><ol>
+<li><p>我们在自己以后想储存博客相关的地方建一个文件夹，比如我在E:\blog   建立了一个blog的文件夹，然后我们在这里安装一下，在文件夹里面，右键git bash here;</p>
+<img src="/2018/07/18/github+hexo搭建博客(一)/15.png" title="说明">
+</li>
+<li><p>我们通过下面的命令，安装一下，hexo，会要一会，出现hexo版本号就成功了；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo --save</span><br></pre></td></tr></table></figure>
+<img src="/2018/07/18/github+hexo搭建博客(一)/16.png" title="说明">
+</li>
+<li><p>然后我们需要初始化一下hexo，在窗口里面继续输入下面代码；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<img src="/2018/07/18/github+hexo搭建博客(一)/17.png" title="说明">
+</li>
+<li><p>我们配置一下hexo和我们库的连接，打开刚刚文件夹里面出现的一个配置文件_config.yml ；然后对他进行编辑，记事本也可以，把文件拉到最后补全如下代码,xxxxxx 请替换成你自己的用户名，rep 后面是你的库的SSH地址，也可以直接去GitHub库下复制；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:xxxxxx/xxxxxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<img src="/2018/07/18/github+hexo搭建博客(一)/18.png" title="说明">
+</li>
+</ol>
+<ol start="5">
+<li><p>然后我们在窗口下继续输入下面代码，把内容设置到github；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<img src="/2018/07/18/github+hexo搭建博客(一)/19.png" title="说明">
+</li>
+<li><p>窗口下面继续输入下面两行代码设置我们的信息，不然下一步会报错，第一个替换成你自己的github用户名，第二个换成你自己注册的邮箱；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;XXXXX&quot;</span><br><span class="line">git config --global user.email XXX@XXXXXXX.com</span><br></pre></td></tr></table></figure>
+<img src="/2018/07/18/github+hexo搭建博客(一)/20.png" title="说明">
+</li>
+<li><p>接下来，输入下面两条，生成我们的html页面和发布上去,中间会卡一会，如图所示就成功了；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo -g</span><br><span class="line">hexo -d</span><br></pre></td></tr></table></figure>
+<img src="/2018/07/18/github+hexo搭建博客(一)/21.png" title="说明">
+<img src="/2018/07/18/github+hexo搭建博客(一)/22.png" title="说明">
+</li>
+<li><p>我们此时打开浏览器访问，我们之前设置的域名 XXXXX.github.io，应该是可以看到如下页面，这一页就讲这么多，书写博客，主题更换，我们下一篇讲；</p>
+<img src="/2018/07/18/github+hexo搭建博客(一)/23.png" title="说明"></li>
+</ol>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2018-07-18</span><i class="fa fa-tag"></i><a class="tag" href="/categories/博客/" title="博客">博客 </a><a class="tag" href="/tags/Hexo/" title="Hexo">Hexo </a><a class="tag" href="/tags/Github/" title="Github">Github </a><span id="busuanzi_container_page_pv">  阅读量: <span id="busuanzi_value_page_pv"></span><span>    </span></span></div></div></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2018/07/17/Bandwagon/" title="搭建服务器设置SS—Bandwagon篇">上一篇</a></li></ul></div><div id="container"></div><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>var gitment = new Gitment({
+id:  'github+hexo搭建博客(一)',
+owner: 'linshaocong',
+repo: 'linshaocong.github.io',
+oauth: {
+    client_id: '69a7a451a83507d8c783',
+    client_secret: '115a421e47bbbe71bb197496672cc84323c74b57',
+},
+})
+gitment.render('container')</script></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>
